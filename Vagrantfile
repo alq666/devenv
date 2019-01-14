@@ -68,6 +68,7 @@ Vagrant.configure("2") do |config|
     echo "deb https://repo.iovisor.org/apt/bionic bionic main" | sudo tee /etc/apt/sources.list.d/iovisor.list
     apt-get update
     apt-get install -y bcc-tools libbcc-examples linux-headers-$(uname -r)
+    apt-get install -y emacs25-nox
     apt-get dist-upgrade -y
   SHELL
 end
